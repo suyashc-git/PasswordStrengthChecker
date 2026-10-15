@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #0002;
+            width: 350px;
+            text-align: center;
+        }
+        h1 { color: #243b53; }
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #bcccdc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 11px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Checker</h1>
+        <p>Enter a password to check its strength.</p>
+
+        <form action="/check" method="post">
+            <input type="password" name="password"
+                   id="password" placeholder="Enter your password"
+                   required>
+            <br>
+            <button type="submit" id="checkButton">
+                Check Strength
+            </button>
+        </form>
+    </div>
+</body>
+</html>
